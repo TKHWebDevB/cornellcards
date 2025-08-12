@@ -1,13 +1,12 @@
 import React from 'react'
 import NavBar from '../components/NavBar';
-
-const Login = () => {
+const Signup = () => {
     return (
         <>
             <NavBar />
-            <h1>Log In</h1>
+            <h1>Sign Up</h1>
         </>
   )
 }
 
-export default Login;
+export default Signup;

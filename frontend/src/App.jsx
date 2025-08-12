@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route, useNavigate} from "react-router-dom"
 import { useEffect } from 'react'
 import Home from './pages/home'
 import Login from './pages/login'
+import Signup from './pages/signup'
 
 const client = new QueryClient();
 
@@ -16,11 +17,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </BrowserRouter>
       </QueryClientProvider>
     </>
-  )
+  );
 }
 
 export default App
