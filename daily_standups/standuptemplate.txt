@@ -1,0 +1,14 @@
+Meeting Date:
+
+Notetaker: 
+
+Meeting Participants:
+Participant #1:
+    - What did I do yesterday?
+    - What will I do today?
+    - Are there any blockers?
+
+Participant #2:
+    - What did I do yesterday?
+    - What will I do today?
+    - Are there any blockers?
