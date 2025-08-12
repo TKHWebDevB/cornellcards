@@ -52,27 +52,29 @@ const Login = () => {
   function LoginForm() {
     return (
       <form onSubmit={handleSubmit(loginUser)}>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className="input border-2"
-            {...register('email')}
-          />
+        <div className="flex flex-col justify-left gap-6">
+          <div className="flex place-content-between gap-4">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="input border-2"
+              {...register('email')}
+            />
+          </div>
+          <div className="flex place-content-between gap-4">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              className="input border-2"
+              {...register('password')}
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            className="input border-2"
-            {...register('password')}
-          />
-        </div>
-        <button type="submit">Login</button>
+        <button type="submit" className='m-3'>Login</button>
       </form>
     );
   }
@@ -80,7 +82,7 @@ const Login = () => {
   return (
     <>
       <NavBar />
-      <h1>Log In</h1>
+      <h1 className='p-6'>Log In</h1>
       <div>
         <div>
           <LoginAlert />

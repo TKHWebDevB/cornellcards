@@ -61,34 +61,37 @@ const Signup = () => {
   function SignUpForm() {
     return (
       <form onSubmit={handleSubmit(signUpUser)}>
-        <div className="flex gap-3">
-          <label htmlFor="username">Username </label>
-          <input
-            id="username"
-            type="username"
-            className="input border-2"
-            {...register('username')}
-          />
+        <div className="flex flex-col justify-left gap-6">
+          <div className="flex place-content-between gap-4">
+            <label htmlFor="username">Username </label>
+            <input
+              id="username"
+              type="username"
+              className="input border-2"
+              {...register('username')}
+            />
+          </div>
+          <div className="flex place-content-between gap-4">
+            <label htmlFor="username">Email </label>
+            <input
+              id="email"
+              type="email"
+              className="input border-2"
+              {...register('email')}
+            />
+          </div>
+          <div className="flex place-content-between gap-4">
+            <label htmlFor="password">Password </label>
+            <input
+              id="password"
+              type="password"
+              className="input border-2"
+              {...register('password')}
+            />
+          </div>
         </div>
-        <div className="flex gap-3">
-          <label htmlFor="username">Email </label>
-          <input
-            id="email"
-            type="email"
-            className="input border-2"
-            {...register('email')}
-          />
-        </div>
-        <div className="flex gap-3">
-          <label htmlFor="password">Password </label>
-          <input
-            id="password"
-            type="password"
-            className="input border-2"
-            {...register('password')}
-          />
-        </div>
-        <button type="submit">Sign Up</button>
+
+        <button type="submit" className="m-3">Sign Up</button>
       </form>
     );
   }
@@ -96,12 +99,15 @@ const Signup = () => {
   return (
     <>
       <NavBar />
-      <h1>Sign Up</h1>
+      <h1 className='p-3'>Sign Up</h1>
       <div>
-              <div>
-                  <SignupAlert />
-                  <SignUpForm />
-                  <p> Have an account? <Link to="/login">Log In</Link></p>
+        <div>
+          <SignupAlert />
+          <SignUpForm />
+          <p>
+            {' '}
+            Have an account? <Link to="/login">Log In</Link>
+          </p>
         </div>
       </div>
     </>

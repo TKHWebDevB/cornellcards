@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 const NavBar = () => {
   return (
     <div>
-      <ul className="flex flex-row gap-3">
+      <ul className="flex flex-row gap-3 justify-center">
         <li>
           <Link to="/">Home</Link>
         </li>
