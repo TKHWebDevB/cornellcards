@@ -2,9 +2,9 @@ import './App.css'
 import {QueryClientProvider, QueryClient} from "@tanstack/react-query"
 import {BrowserRouter, Routes, Route, useNavigate} from "react-router-dom"
 import { useEffect } from 'react'
-import Home from './pages/home'
-import Login from './pages/login'
-import Signup from './pages/signup'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 
 const client = new QueryClient();
 

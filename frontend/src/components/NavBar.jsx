@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 const NavBar = () => {
   return (
     <div>
-      <ul>
+      <ul className="flex flex-row gap-3">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -16,7 +16,7 @@ const NavBar = () => {
         </li>
       </ul>
     </div>
-  )
+  );
 }
 
 export default NavBar
