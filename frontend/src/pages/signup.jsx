@@ -61,7 +61,7 @@ const Signup = () => {
   function SignUpForm() {
     return (
       <form onSubmit={handleSubmit(signUpUser)}>
-        <div>
+        <div className="flex gap-3">
           <label htmlFor="username">Username </label>
           <input
             id="username"
@@ -70,7 +70,7 @@ const Signup = () => {
             {...register('username')}
           />
         </div>
-        <div>
+        <div className="flex gap-3">
           <label htmlFor="username">Email </label>
           <input
             id="email"
@@ -79,7 +79,7 @@ const Signup = () => {
             {...register('email')}
           />
         </div>
-        <div>
+        <div className="flex gap-3">
           <label htmlFor="password">Password </label>
           <input
             id="password"

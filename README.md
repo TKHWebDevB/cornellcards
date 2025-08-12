@@ -16,13 +16,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installation
 
-A step by step guide that will tell you how to get the development environment up and running.
+``` cd frontend
+npm i```
 
-```
-$ First step
-$ Another step
-$ Final step
-```
+### env
+Use the key `VITE_SUPABASE_ANON_KEY` and find your `anon public` key in Supabase, under the 'Settings'. Click `API key` an copy the `anon public`. Paste it as the value for `VITE_SUPABASE_ANON_KEY`
 
 ## Usage
 
