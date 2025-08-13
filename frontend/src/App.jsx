@@ -1,11 +1,11 @@
 import './App.css'
 import {QueryClientProvider, QueryClient} from "@tanstack/react-query"
-import {BrowserRouter, Routes, Route, useNavigate} from "react-router-dom"
-import { useEffect } from 'react'
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+// import { useEffect } from 'react'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
+import Signup from './pages/signup'
 
 const client = new QueryClient();
 
