@@ -72,7 +72,7 @@ const Signup = () => {
             />
           </div>
           <div className="flex place-content-between gap-4">
-            <label htmlFor="username">Email </label>
+            <label htmlFor="email">Email </label>
             <input
               id="email"
               type="email"
