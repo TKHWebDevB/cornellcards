@@ -1,0 +1,22 @@
+Meeting Date: 08/11/2025
+
+Notetaker: Tea M
+
+Meeting Participants:
+Alex G:
+    - What did I do yesterday?
+        Prisma modeling
+        User, Notebook, Collection, Cue, Answer
+    - What will I do today?
+        Create dummy data
+    - Are there any blockers?
+        Kumo barking
+
+Tea M:
+    - What did I do yesterday?
+        Completed lo-fi and hi-fi
+        Created test routes for the Sign Up and Log In page on the frontend
+    - What will I do today?
+        complete the authentication
+    - Are there any blockers?
+        need to finish homework + constricted to in-class hours
