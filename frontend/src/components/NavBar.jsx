@@ -15,21 +15,23 @@ const NavBar = () => {
   }
 
   return (
-    <div>
-      <ul className="flex flex-row gap-3 justify-center">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/signup">Sign Up</Link>
-        </li>
-        <li>
-          <button onClick={logoutUser}>Log Out</button>
-        </li>
-      </ul>
+    <div className="flex flex-col w-80 h-64 gap-6">
+      <div className='w-full h-[20%] flex justify-end'>
+        <button onClick={logoutUser}>Log Out</button>
+      </div>
+      <div>
+        <ul className="flex flex-row gap-3 justify-center align-middle">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/signup">Sign Up</Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
