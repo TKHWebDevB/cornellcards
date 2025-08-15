@@ -4,7 +4,7 @@ import prisma from "../db/index.js";
 
 router.get("/", async (req, res) => {
   // Gets all the todos from the database
-  const todos = await prisma.todo.findMany();
+  const notebooks = await prisma.todo.findMany();
   // Responds back to the client with json with a success status and the todos array
   res.status(200).json({
     success: true,
