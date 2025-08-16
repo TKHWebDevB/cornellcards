@@ -21,7 +21,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/notebooks" element={<Notebooks />} />
+            <Route path="/create/notebook" element={<Notebooks />} />
+            <Route path="/notebook/edit/:notebookID" element={<Notebooks />} />
           </Routes>
         </BrowserRouter>
       </QueryClientProvider>
