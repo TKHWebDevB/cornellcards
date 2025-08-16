@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+// import { useState } from 'react';
+// import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import supabase from '../../client';
+// import supabase from '../../client';
 
 import NavBar from '../components/NavBar';
 
 const CreateNotebook = () => {
-  const [alert, showAlert] = useState({
-    message: '',
-    show: false,
-  });
+  // const [alert, showAlert] = useState({
+  //   message: '',
+  //   show: false,
+  // });
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const { register, handleSubmit } = useForm({
     defaultValues: {
@@ -60,34 +60,33 @@ const CreateNotebook = () => {
 
   function CreateNotebookForm() {
     return (
-      <form onSubmit={handleSubmit(signUpUser)}>
-        <div className="flex flex-col justify-left gap-6">
-          <div className="flex place-content-between gap-4">
+      <form onSubmit={handleSubmit()}>
+        <div className="flex flex-col justify-center gap-6">
+          <div className="flex flex-col justify-center gap-4 w-72">
             <label htmlFor="username">Notebook Title</label>
             <input
               id="title"
               type="text"
+              placeholder="Enter Title"
               className="input border-2"
               {...register('title')}
             />
           </div>
         </div>
 
-        <button type="submit" className="m-3">Create Notebook</button>
+        <button type="submit" className="m-3">
+          Create Notebook
+        </button>
       </form>
     );
   }
 
   return (
-    <>
+    <div className="flex flex-col justify-center w-96">
       <NavBar />
       <h1 className="p-3">Create New Notebook</h1>
-      <div>
-        <div>
-          <CreateNotebookForm />
-        </div>
-      </div>
-    </>
+      <CreateNotebookForm />
+    </div>
   );
 };
 

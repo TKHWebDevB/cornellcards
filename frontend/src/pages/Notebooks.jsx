@@ -19,7 +19,7 @@ const Notebooks = () => {
           </div>
           {/* top-right container */}
           <div className="flex justify-center align-middle w-full">
-            Last Updated
+            Page Title
           </div>
         </div>
         {/* bottom container */}
