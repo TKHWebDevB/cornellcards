@@ -2,6 +2,8 @@ import {Link, useNavigate} from 'react-router-dom'
 import supabase from '../../client'
 
 const NavBar = () => {
+  // TODO: Style according to user login status. if user is logged in, navbar should have 'Home' and 'Logout'. if not, include 'Login' and 'Sign up' minus 'Logout'
+
   const navigate = useNavigate();
 
   const logoutUser = () => {
@@ -15,11 +17,17 @@ const NavBar = () => {
   }
 
   return (
-    <div className="flex flex-col w-80 h-64 gap-6">
-      <div className='w-full h-[20%] flex justify-end'>
-        <button onClick={logoutUser}>Log Out</button>
+    <div className="flex flex-col justify-center w-full h-full gap-3">
+      <div className="w-full h-[20%] flex justify-end">
+        <button
+          type="button"
+          className="flex h-full text-center p-[0px]"
+          onClick={logoutUser}
+        >
+          Log Out
+        </button>
       </div>
-      <div>
+      <div className="h-[80%]">
         <ul className="flex flex-row gap-3 justify-center align-middle">
           <li>
             <Link to="/">Home</Link>

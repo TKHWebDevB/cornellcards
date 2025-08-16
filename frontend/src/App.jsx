@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Signup from './pages/signup'
 import Notebooks from './pages/Notebooks'
+import CreateNotebook from './pages/CreateNotebook'
 
 const client = new QueryClient();
 
@@ -21,7 +22,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/notebooks" element={<Notebooks />} />
+            <Route path="/create/notebook" element={<CreateNotebook />} />
+            <Route path="/notebook/edit/:notebookID" element={<Notebooks />} />
           </Routes>
         </BrowserRouter>
       </QueryClientProvider>
