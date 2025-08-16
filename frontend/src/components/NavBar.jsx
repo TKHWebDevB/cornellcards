@@ -2,6 +2,8 @@ import {Link, useNavigate} from 'react-router-dom'
 import supabase from '../../client'
 
 const NavBar = () => {
+  // TODO: Style according to user login status. if user is logged in, navbar should have 'Home' and 'Logout'. if not, include 'Login' and 'Sign up' minus 'Logout'
+
   const navigate = useNavigate();
 
   const logoutUser = () => {

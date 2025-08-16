@@ -6,6 +6,10 @@ import { useForm } from 'react-hook-form';
 import NavBar from '../components/NavBar';
 
 const CreateNotebook = () => {
+  // TODO: Create a handleSubmit function to submit the Notebook title at the appropriate route
+  // TODO: Erase any unnecessary code currently in this file
+
+
   // const [alert, showAlert] = useState({
   //   message: '',
   //   show: false,
